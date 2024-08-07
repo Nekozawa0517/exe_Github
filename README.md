@@ -75,7 +75,7 @@ add & commitする
 ╰─ git commit -m "good morningを追加"
 ```
 
-git-conflictブランチに戻って、feature/1ブランチをマージする
+git-conflictブランチに戻って、feature/2ブランチをマージする
 ```
 ╰─ git checkout git-conflict
 M	README.md
