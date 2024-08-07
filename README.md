@@ -137,7 +137,7 @@ index.htmlを修正する。
 
 "<<<<<<"や">>>>>>"、"======="は削除して良い
 
-add % commit % push する
+add & commit & push する
 ```
 ╰─ git add index.html 
 
