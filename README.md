@@ -1,7 +1,7 @@
 # exe_Github
 ## 夏休み演習
 
-## コンフリクトの起こし方とその対処法
+## 1. コンフリクトの起こし方とその対処法
 コンフリクトはコミット履歴を持つ2つ以上のブランチを統合する際に起こる競合のことである。
 
 ### コンフリクトを起こしてみる
@@ -162,3 +162,4 @@ branch 'git-conflict' set up to track 'origin/git-conflict'.
 
 pushが完了した。
 
+## 2. [学科サーバー上でLinux環境構築](https://github.com/Nekozawa0517/exe_Github/blob/main/vm.md)
