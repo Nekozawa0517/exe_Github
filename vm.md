@@ -1,7 +1,10 @@
 # 学科サーバー上でLinux環境構築
+### Author: [IbukiShinzato](https://github.com/IbukiShinzato)
+
 学科サーバー(amane)でie-virshコマンド使いVMを作成
 
 https://ie.u-ryukyu.ac.jp/syskan/service/ie-virsh/ に詳しく書かれています。
+
 
 ## amaneにログイン
 公開鍵認証でログインする
@@ -114,7 +117,7 @@ manjaro-minimal
 
 使用OS: Ubuntu(20.04)
 ```
-e235718@amane:~$ ie-virsh define -b ubuntu -t Ubuntu-20
+e235718@amane:~$ ie-virsh define -b makevm -t Ubuntu-20
 uid: 19042 gid: 1001 name: e235718
 e235718-makevm
 generate xml : /etc/libvirt/qemu/e23/e235718/e235718-makevm.xml
@@ -228,3 +231,4 @@ Last login: Wed Aug 26 16:27:14 2020 from 10.100.10.50
 ユーザ名@ubuntu:~$となっていればログインは完了です。
 
 現在はパスワード認証であるのと、デフォルトのユーザーでのログインなので、公開鍵認証にしたり、ユーザーを作成すると良いでしょう。
+
