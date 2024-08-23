@@ -154,9 +154,9 @@ Akatukiにログインしたら、`New IP`をクリックします。
 ![Akatuki1](./akatuki1.png)
 
 
-`Domain`には`ie-virsh define`の-bで指定した名前を入れる。
+`Domain`には自分のユーザー名と`ie-virsh define`の-bで指定した名前を入れる。
 
-ここでは`makevm`となる。
+ここでは`e235718-makevm`となる。
 
 `Mac address`には以下のコマンドで出力されるMACとなる
 ```
