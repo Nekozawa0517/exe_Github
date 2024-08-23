@@ -48,7 +48,7 @@ amaneにログイン
 
 ログイン完了後は以下のようになっている。`e235718`のところは登録したユーザー名になっていれば良い。
 ```
-e235718@amane:~$ 
++amane+e235718 
 ```
 
 ## VMの作成
@@ -57,7 +57,7 @@ e235718@amane:~$
 `ie-virsh` とコマンドを打つとコマンドの説明が出るからこれを参考にすると良い。
 
 ```
-e235718@amane:~$ ie-virsh
++amane+e235718 ie-virsh
 ie-virsh 0.2.4
 AnaTofuZ <anatofuz@cr.ie.u-ryukyu.ac.jp>
 
@@ -94,7 +94,7 @@ SUBCOMMANDS:
 使えるOSは様々あるが、最初は`Ubuntu-22`をおすすめする。
 
 ```
-e235718@amane:~$ ie-virsh templates
++amane+e235718 ie-virsh templates
 uid: 19042 gid: 1001 name: e235718
 CentOS-7
 CentOS-8
@@ -117,7 +117,7 @@ manjaro-minimal
 
 使用OS: Ubuntu(20.04)
 ```
-e235718@amane:~$ ie-virsh define -b makevm -t Ubuntu-20
++amane+e235718 ie-virsh define -b makevm -t Ubuntu-20
 uid: 19042 gid: 1001 name: e235718
 e235718-makevm
 generate xml : /etc/libvirt/qemu/e23/e235718/e235718-makevm.xml
@@ -133,7 +133,7 @@ VMにログインする際に使用します。
 
 `ie-virsh list`でVMが作られているか確認
 ```
-e235718@amane:~$ ie-virsh list
++amane+e235718 ie-virsh list         
 uid: 19042 gid: 1001 name: e235718
  Id    Name                            State
 -------------------------------------------------
@@ -160,7 +160,7 @@ Akatukiにログインしたら、`New IP`をクリックします。
 
 `Mac address`には以下のコマンドで出力されるMACとなる
 ```
-e235718@amane:~$ ie-virsh domiflist makevm
++amane+e235718 ie-virsh domiflist makevm
 uid: 19042 gid: 1001 name: e235718
  Interface   Type     Source   Model    MAC
 -----------------------------------------------------------
@@ -177,7 +177,7 @@ uid: 19042 gid: 1001 name: e235718
 
 VMを起動してログイン
 ```
-e235718@amane:~$ ie-virsh list
++amane+e235718 ie-virsh list
 uid: 19042 gid: 1001 name: e235718
  Id    Name                            State
 -------------------------------------------------
@@ -185,11 +185,11 @@ uid: 19042 gid: 1001 name: e235718
  -     e235718-centos8                 shut off
  -     e235718-lamp                    shut off
  -     e235718-makevm                  shut off
-e235718@amane:~$ ie-virsh start makevm
++amane+e235718 ie-virsh start makevm
 uid: 19042 gid: 1001 name: e235718
 Domain 'e235718-makevm' started
 
-e235718@amane:~$ ie-virsh list
++amane+e235718 ie-virsh list
 uid: 19042 gid: 1001 name: e235718
  Id    Name                            State
 -------------------------------------------------
@@ -197,7 +197,7 @@ uid: 19042 gid: 1001 name: e235718
  571   e235718-makevm                  running
  -     e235718-centos8                 shut off
  -     e235718-lamp                    shut off
-e235718@amane:~$ ssh ユーザ名@10.0.3.150
++amane+e235718 ssh ユーザ名@10.0.3.150  
 The authenticity of host '10.0.3.150 (10.0.3.150)' can't be established.
 ED25519 key fingerprint is SHA256:dnKJDSGb2RbxL6TK8NvH2pB52RrCPsrBjv3rtQFpkJ4.
 This host key is known by the following other names/addresses:
